@@ -6,78 +6,82 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo  logo--close">
+      <div class="logo">
+        <img src="http://placehold.it/150x100" alt="Mishka">
+        <button class="logo--hamburger" name="order">Заказать</button>
       </div>
-      <nav class="top-nav">
+      <nav class="top-nav visible-hidden">
         <ul class="top-nav__list">
           <li class="top-nav__item">
-            <a href="">Каталог товаров</a>
+            <a class="top-nav__link" href="">Каталог товаров</a>
           </li>
           <li class="top-nav__item">
-            <a href="">Вязание на заказ</a>
+            <a class="top-nav__link" href="">Вязание на заказ</a>
           </li>
-        </ul>
-        <ul class="top-nav__list">
           <li class="top-nav__item  top-nav__item--search">
-            <button name="search">Поиск по сайту</button>
+            <a class="top-nav__link" href="">Поиск по сайту</a>
           </li>
           <li class="top-nav__item  top-nav__item--basket">
-            <button name="basket">Корзина: пока пусто</button>
+            <a class="top-nav__link" href="">Корзина: пока пусто</a>
           </li>
         </ul>
-        <div class="logo  logo--hamburger">
-        </div>
       </nav>
     </header>
     <main class="page-main">
       <section class="content-header">
-        <h1>Каталог товаров</h1>
+        <h1 class="content-header__title">Каталог товаров</h1>
       </section>
-      <section class="product">
-        <img src="http://placehold.it/150x100" alt="">
-        <h2>Зайчик-попрыгайчик</h2>
-        <span class="product__info">Рост 30 см, вес 200 г</span>
-        <span class="product__price">1 200 руб.</span>
-        <button class="basket-btn" name="addToBasket"></button>
-      </section>
-      <section class="product">
-        <img src="http://placehold.it/150x100" alt="">
-        <h2>Корзинка для белья</h2>
-        <span class="product__info">Диаметр 15 см, высота 10 см</span>
-        <span class="product__price">690 руб.</span>
-        <button class="basket-btn" name="addToBasket"></button>
-      </section>
-      <section class="product">
-        <img src="http://placehold.it/150x100" alt="">
-        <h2>Большая корзинка для игрушек</h2>
-        <span class="product__info">Диаметр 30 см, высота 30 см</span>
-        <span class="product__price">1 500 руб.</span>
-        <button class="basket-btn" name="addToBasket"></button>
-      </section>
-      <section class="production-process">
-        <h2>Процесс производства</h2>
-        <img src="http://placehold.it/150x100" alt="">
-        <p>
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <button class="btn" name="order">Сделать заказ</button>
-      </section>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <article class="product">
+            <img class="product__img" src="http://placehold.it/150x100" alt="">
+            <h2 class="product__title">Зайчик-попрыгайчик</h2>
+            <span class="product__info">Рост 30 см, вес 200 г</span>
+            <span class="product__price">1 200 руб.</span>
+            <button class="basket-btn" name="addToBasket"></button>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <img class="product__img" src="http://placehold.it/150x100" alt="">
+            <h2 class="product__title">Корзинка для белья</h2>
+            <span class="product__info">Диаметр 15 см, высота 10 см</span>
+            <span class="product__price">690 руб.</span>
+            <button class="basket-btn" name="addToBasket"></button>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <img class="product__img" src="http://placehold.it/150x100" alt="">
+            <h2 class="product__title">Большая корзинка для игрушек</h2>
+            <span class="product__info">Диаметр 30 см, высота 30 см</span>
+            <span class="product__price">1 500 руб.</span>
+            <button class="basket-btn" name="addToBasket"></button>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="production-process">
+            <h2 class="production-process__title">Процесс производства</h2>
+            <img class="product__img" src="http://placehold.it/150x100" alt="">
+            <p class="production-process__descr">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <button class="btn" name="order">Сделать заказ</button>
+          </article>
+        </li>
+      </ul>
     </main>
     <footer class="page-footer">
       <section class="social">
-        <div class="social-inst">
-          <a href=""></a>
-        </div>
-        <div class="social-fb">
-          <a href=""></a>
-        </div>
-        <div class="social-tw">
-          <a href=""></a>
+        <div class="social-items">
+          <a class="social-link social-link--inst" href="">Мы в инстаграме</a>
+          <a class="social-link social-link--fb" href="">Мы в фейсбуке</a>
+          <a class="social-link social-link--tw" href="">Мы в твитере</a>
         </div>
       </section>
-      <div>
-        <span>Разработано</span>
-        <a href="https://up.htmlacademy.ru"></a>
+      <div class="copyright">
+        <span class="copyright__title">Разработано</span>
+        <a class="copyright__link" href="https://up.htmlacademy.ru"></a>
       </div>
     </footer>
   </body>
