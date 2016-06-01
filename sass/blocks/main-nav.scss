@@ -1,0 +1,13 @@
+.main-nav {
+  &__link {
+    @include set-font-family($second-font, $second-font);
+    @include set-font-style(18px, 24px);
+    color: $color-white-1;
+  }
+  &__link--objects {
+    background-color: $color-blue-1;
+  }
+  &__link--toys {
+    background-color: $color-blue-2;
+  }
+}

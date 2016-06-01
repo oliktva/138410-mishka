@@ -1,0 +1,17 @@
+.knitting-order {
+  margin: 25px;
+  border: red 1px dashed;
+  &__descr {
+    @include set-font-family($web-font-1, $main-font);
+    @include set-font-style(14px, 24px, normal);
+    color: $color-gray-2;
+  }
+
+
+  &__title {
+    @include set-font-family($web-font-2, $main-font);
+    @include set-font-style(16px, 16px);
+    text-transform: uppercase;
+    color: $color-blue-1;
+  }
+}

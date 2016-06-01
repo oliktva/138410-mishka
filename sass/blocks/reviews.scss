@@ -1,0 +1,24 @@
+.reviews {
+  border: 1px red dashed;
+
+  
+  &__title {
+      @include set-font-style(24px, 30px);
+  }
+
+  &__text {
+      @include set-font-family($web-font-1, $main-font);
+      @include set-font-style(14px, 24px, normal);
+      color: $color-gray-2;
+  }
+
+  &__author {
+    @include set-font-style(14px, 24px);
+  }
+
+  &__link {
+    @include set-font-family($web-font-1, $main-font);
+    @include set-font-style(14px, 30px, normal);
+    color: $color-gray-2;
+  }
+}

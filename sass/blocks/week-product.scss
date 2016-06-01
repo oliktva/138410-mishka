@@ -1,0 +1,32 @@
+.week-product {
+  border: 1px red dashed;
+
+  
+  &__title {
+    @include set-font-style(24px, 30px);
+    color: $color-black-1;
+  }
+
+  &__label {
+    @include set-font-style(16px, 16px);
+    color: $color-blue-1;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    @include set-font-family($web-font-1, $main-font);
+    @include set-font-style(14px, 24px, normal);
+    color: $color-gray-2;
+  }
+
+  &__prop {
+    @include set-font-family($web-font-1, $main-font);
+    @include set-font-style(14px, 20px, normal);
+    color: $color-gray-2;
+  }
+
+  &__price {
+    @include set-font-style(16px, 24px);
+    color: $color-gray-2;
+  }
+}

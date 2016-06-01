@@ -1,0 +1,12 @@
+.about-shop {
+  border: 1px red dashed;
+
+  
+  &__title {
+    @include set-font-style(24px, 30px);
+  }
+
+  &__descr {
+      @include set-font-style(16px, auto);
+  }
+}

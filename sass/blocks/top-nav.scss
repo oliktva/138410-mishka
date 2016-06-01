@@ -1,0 +1,6 @@
+.top-nav {
+  &__link {
+    @include set-font-style(16px, 24px);
+    color: $color-black-1;
+  }
+}

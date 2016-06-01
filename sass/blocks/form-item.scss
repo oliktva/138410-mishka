@@ -1,0 +1,7 @@
+.form-item {
+  &__label {
+    @include set-font-family();
+    @include set-font-style(16px, 18px);
+    color: $color-black-1;
+  }
+}
