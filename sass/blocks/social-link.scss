@@ -1,3 +1,23 @@
-.copyright {
-  @include set-font-style(18px, 18px);
+.social-link {
+  display: block;
+  height: 27px;
+  font-size: 0;
+
+  &--inst {
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+  }
+
+  &--fb {
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 27px;
+  }
+
+  &--tw {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-size: 23px 20px;
+  }
 }

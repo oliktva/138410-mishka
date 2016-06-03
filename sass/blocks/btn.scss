@@ -1,8 +1,8 @@
 .btn {
+  padding: 16px;
   background-color: $color-white-1;
   border: 2px $color-gray-2 solid;
   color: $color-gray-2;
-
   @include set-font-family($web-font-2, $main-font);
   @include set-font-style(16px, 16px);
   text-transform: uppercase;

@@ -8,11 +8,11 @@
   <body>
     <header class="page-header">
       <div class="logo">
-        <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Mishka">
+        <img src="img/logo-mobile.svg" width="85" height="35" alt="Mishka">
         <a class="logo--hamburger" href=""></a>
       </div>
-      <nav class="top-nav visible-hidden">
-        <ul class="top-nav__list  list-style">
+      <nav class="top-nav top-nav--hidden">
+        <ul class="top-nav__list">
           <li class="top-nav__item">
             <a class="top-nav__link" href="">Каталог товаров</a>
           </li>
@@ -23,7 +23,7 @@
             <a class="top-nav__link" href="">Поиск по сайту</a>
           </li>
           <li class="top-nav__item  top-nav__item--basket">
-            <a class="top-nav__link" href="">Корзина: пока пусто</a>
+            <a class="top-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -39,90 +39,90 @@
         <form class="knitting-order__form">
           <div class="knitting-order__item">
             <span class="knitting-order__title">Тип</span>
-            <ul class="form-list  list-style">
-              <li class="form-item">
-                <label class="form-item__label" for="accessories">
-                  <input class="form-item__input" id="accessories" type="radio" name="type" checked>
-                  <span class="form-item__switch form-item__switch--radiobtn"></span>
+            <ul class="form-list">
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--radio" for="accessories">
+                  <input class="form-list__input" id="accessories" type="radio" name="type" checked>
+                  <span></span>
                 Аксессуар для интерьера</label>
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="toy">
-                  <input class="form-item__input" id="toy" type="radio" name="type">
-                  <span class="form-item__switch form-item__switch--radiobtn"></span>
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--radio" for="toy">
+                  <input class="form-list__input" id="toy" type="radio" name="type">
+                  <span></span>
                 Детская игрушка</label>
               </li>
             </ul>
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">Цвет</span>
-            <ul class="form-list  list-style">
-              <li class="form-item">
-                <label class="form-item__label" for="white">
-                  <input class="form-item__input" id="white" type="checkbox" name="color" checked>
-                  <span class="form-item__switch form-item__switch--checkbox"></span>
+            <ul class="form-list">
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--checkbox" for="white">
+                  <input class="form-list__input" id="white" type="checkbox" name="color" checked>
+                  <span></span>
                 Белый</label>
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="gray">
-                  <input class="form-item__input" id="gray" type="checkbox" name="color" checked>
-                  <span class="form-item__switch form-item__switch--checkbox"></span>
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--checkbox" for="gray">
+                  <input class="form-list__input" id="gray" type="checkbox" name="color" checked>
+                  <span></span>
                 Серый</label>
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="tiffany">
-                  <input class="form-item__input" id="tiffany" type="checkbox" name="color">
-                  <span class="form-item__switch form-item__switch--checkbox"></span>
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--checkbox" for="tiffany">
+                  <input class="form-list__input" id="tiffany" type="checkbox" name="color">
+                  <span></span>
                 &laquo;Тиффани&raquo;</label>
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="black">
-                  <input class="form-item__input" id="black" type="checkbox" name="color">
-                  <span class="form-item__switch form-item__switch--checkbox"></span>
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--checkbox" for="black">
+                  <input class="form-list__input" id="black" type="checkbox" name="color">
+                  <span></span>
                 Черный</label>
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="pink">
-                  <input class="form-item__input" id="pink" type="checkbox" name="color">
-                  <span class="form-item__switch form-item__switch--checkbox"></span>
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--checkbox" for="pink">
+                  <input class="form-list__input" id="pink" type="checkbox" name="color">
+                  <span></span>
                 Розовый</label>
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="orange">
-                  <input class="form-item__input" id="orange" type="checkbox" name="color">
-                  <span class="form-item__switch form-item__switch--checkbox"></span>
+              <li class="form-list__item">
+                <label class="form-list__label  form-list__label--checkbox" for="orange">
+                  <input class="form-list__input" id="orange" type="checkbox" name="color">
+                  <span></span>
                 Оранжевый</label>
               </li>
             </ul>
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">ФИО</span>
-            <ul class="form-list  list-style">
-              <li class="form-item">
-                <label class="form-item__label" for="lastname">Фамилия:</label>
-                <input class="form-item__text" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию">
+            <ul class="form-list">
+              <li class="form-list__item">
+                <label class="form-list__label" for="lastname">Фамилия:</label>
+                <input class="form-list__text" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию">
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="firstname">Имя:</label>
-                <input class="form-item__text" id="firstname" type="text" name="firstname" placeholder="Введите ваше имя">
+              <li class="form-list__item">
+                <label class="form-list__label" for="firstname">Имя:</label>
+                <input class="form-list__text" id="firstname" type="text" name="firstname" placeholder="Введите ваше имя">
               </li>
-              <li class="form-item">
-                <label class="form-item__label" for="middlename">Отчество:</label>
-                <input class="form-item__text" id="middlename" type="text" name="middlename" placeholder="Отчество, если желаете">
+              <li class="form-list__item">
+                <label class="form-list__label" for="middlename">Отчество:</label>
+                <input class="form-list__text" id="middlename" type="text" name="middlename" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">Тел</span>
-            <input class="form-item__text  form-item__text--phone" type="text" name="phone" placeholder="+7 XXX XXX XX XX">
+            <input class="form-list__text  form-list__text--phone" type="text" name="phone" placeholder="+7 XXX XXX XX XX">
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">E-mail</span>
-            <input class="form-item__text  form-item__text--mail" type="text" name="mail" placeholder="Ваш e-mail">
+            <input class="form-list__text  form-list__text--mail" type="text" name="mail" placeholder="Ваш e-mail">
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">Доп</span>
-            <textarea class="form-item__textarea" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form-list__textarea" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <input class="btn" type="submit" value="Отправить заказ">
         </form>
@@ -138,7 +138,7 @@
       </section>
       <div class="copyright">
         <span class="copyright__title">Разработано</span>
-        <a class="copyright__link" href="https://up.htmlacademy.ru"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/"></a>
       </div>
     </footer>
   </body>

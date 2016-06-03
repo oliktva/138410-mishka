@@ -1,24 +1,36 @@
 .reviews {
+  padding: 30px;
   border: 1px red dashed;
+}
 
-  
-  &__title {
-      @include set-font-style(24px, 30px);
-  }
+.reviews__title {
+  margin: 0;
+  @include set-font-style(24px, 30px);
+}
 
-  &__text {
-      @include set-font-family($web-font-1, $main-font);
-      @include set-font-style(14px, 24px, normal);
-      color: $color-gray-2;
-  }
+.reviews__text {
+  margin: 0;
+  @include set-font-family($web-font-1, $main-font);
+  @include set-font-style(14px, 24px, normal);
+  color: $color-gray-2;
+}
 
-  &__author {
-    @include set-font-style(14px, 24px);
-  }
+.reviews__author {
+  display: block;
+  @include set-font-style(14px, 24px);
+}
 
-  &__link {
-    @include set-font-family($web-font-1, $main-font);
-    @include set-font-style(14px, 30px, normal);
-    color: $color-gray-2;
-  }
+.reviews__link {
+  @include set-font-family($web-font-1, $main-font);
+  @include set-font-style(14px, 30px, normal);
+  color: $color-gray-2;
+}
+
+.reviews__btn {
+  width: 129px;
+  height: 50px;
+  margin: 36px 0;
+  padding: 0;
+  background-color: $color-white-1;
+  border: 1px $color-gray-3 solid;
 }

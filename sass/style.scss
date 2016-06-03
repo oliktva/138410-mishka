@@ -1,9 +1,10 @@
-//BEM blocks
+
 @import "normalize.scss";
 @import "variables.scss";
 @import "fonts.scss";
 @import "mixins.scss";
 @import "base.scss";
+//BEM blocks
 @import "blocks/about-shop.scss";
 @import "blocks/btn.scss";
 @import "blocks/catalog-item.scss";
@@ -11,10 +12,8 @@
 @import "blocks/contacts.scss";
 @import "blocks/content-header.scss";
 @import "blocks/copyright.scss";
-@import "blocks/form-item.scss";
 @import "blocks/form-list.scss";
 @import "blocks/knitting-order.scss";
-@import "blocks/list-style.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
@@ -28,5 +27,4 @@
 @import "blocks/social-list.scss";
 @import "blocks/social.scss";
 @import "blocks/top-nav.scss";
-@import "blocks/visibility-hidden.scss";
 @import "blocks/week-product.scss";
