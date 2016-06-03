@@ -1,0 +1,13 @@
+.copyright {
+  padding: 22px;
+  @include set-font-style(18px, 18px);
+}
+
+.copyright__link {
+  display: block;
+  height: 34px;
+  font-size: 0;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 34px;
+}

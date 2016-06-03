@@ -1,0 +1,10 @@
+body {
+  @include set-font-family();
+  color: $color-black-1;
+}
+
+a {
+  @include set-font-family();
+  text-decoration: none;
+  color: $color-black-1;
+}

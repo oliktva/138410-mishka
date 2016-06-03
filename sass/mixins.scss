@@ -1,0 +1,15 @@
+@mixin set-font-family($font: "Verdana", $safe-font: "Verdana", $font-family: "sans-serif") {
+  font-family: $font, $safe-font, $font-family;
+}
+
+@mixin set-font-style($font-size, $line-height, $font-weight: bold) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin list-style-none($padding: 0, $margin: 0) {
+  list-style: none;
+  padding: $padding;
+  margin: $margin;
+}

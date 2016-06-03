@@ -1,0 +1,24 @@
+.main-nav {
+
+}
+
+.main-nav__list {
+   @include list-style-none();
+}
+
+.main-nav__item {
+   padding: 27px;
+
+   &--objects {
+     background-color: $color-blue-1;
+   }
+   &--toys {
+     background-color: $color-blue-2;
+   }
+}
+
+.main-nav__link {
+  @include set-font-family($second-font, $second-font);
+  @include set-font-style(18px, 24px);
+  color: $color-white-1;
+}

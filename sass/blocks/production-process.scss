@@ -1,0 +1,18 @@
+.production-process {
+  border: 1px red dashed;
+}
+
+.production-process__title {
+  @include set-font-style(16px, 24px);
+}
+
+.production-process__descr {
+  @include set-font-family($web-font-1, $main-font);
+  @include set-font-style(14px, 24px, normal);
+  color: $color-gray-2;
+}
+
+.production-process__wrapper {
+  padding: 25px;
+  border: 1px $color-gray-3 solid;
+}

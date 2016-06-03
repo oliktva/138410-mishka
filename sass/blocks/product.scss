@@ -1,0 +1,31 @@
+.product {
+  border: 1px red dashed;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 15px;
+  @include set-font-style(16px, 24px);
+}
+
+.product__info {
+  display: block;
+  margin-bottom: 25px;
+  @include set-font-family($web-font-1, $main-font);
+  @include set-font-style(14px, 30px, normal);
+  color: $color-gray-2;
+}
+
+.product__price {
+  @include set-font-style(16px, 24px);
+}
+
+.product__wrapper {
+  padding: 25px;
+  border: 1px $color-gray-3 solid;
+}
+
+.product__basket-btn {
+  background-color: $color-white-1;
+  border: none;
+}
