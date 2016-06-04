@@ -15,3 +15,8 @@
 .about-shop__list {
   @include list-style-none();
 }
+
+.about-shop__img svg,
+.about-shop__img path {
+  fill: $color-blue-1;
+}

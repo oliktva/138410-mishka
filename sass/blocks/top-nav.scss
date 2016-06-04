@@ -4,6 +4,14 @@
 
 .top-nav__list {
  @include list-style-none();
+
+   &--tablet {
+     display: none;
+   }
+
+   &--desktop {
+     display: none;
+   }
 }
 
 .top-nav__item {
@@ -13,4 +21,57 @@
 .top-nav__link {
   @include set-font-style(16px, 24px);
   color: $color-black-1;
+
+  &--delivery {
+    @include set-font-style(14px, 24px, normal);
+    color: $color-gray-2;
+  }
+
+  &--desktop {
+    @include set-font-style(14px, 24px);
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .top-nav__list {
+
+     &--tablet {
+       display: block;
+     }
+  }
+
+  .top-nav__item {
+
+    &--min-max {
+      display: none;
+    }
+
+    &--search .top-nav__link{
+      font-size: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .top-nav__list {
+
+     &--tablet {
+       display: none;
+     }
+
+     &--desktop {
+       display: block;
+     }
+  }
+
+  .top-nav__item {
+
+    &--min-max {
+      display: block;
+    }
+
+    &--search .top-nav__link{
+      font-size: 0;
+    }
+  }
 }
