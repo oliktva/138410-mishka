@@ -2,13 +2,14 @@
   background-color: #fff;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding: 95px 80px;
+  padding: 90px 40px;
 
   border: 1px red dashed;
 }
 
 .main-header__title {
+  margin: 0;
   @include set-font-style(24px, 30px);
   color: $color-black-1;
-  margin: 0;
+  text-align: center;
 }

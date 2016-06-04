@@ -27,6 +27,14 @@
   border-bottom: 2px $color-black-1 solid;
   background-color: $color-white-1;
   outline: none;
+
+  &--not-mobile {
+    display: none;
+  }
+
+  &--mobile {
+    display: block;
+  }
 }
 
 .form-list__textarea {
@@ -88,4 +96,30 @@
   background-repeat: no-repeat;
   background-position: -5px -5px;
   z-index: 100;
+}
+
+@media (min-width: $tablet-size) {
+  .form-list__text {
+
+    &--not-mobile {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .form-list__text {
+
+    &--not-mobile {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
 }

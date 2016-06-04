@@ -18,3 +18,22 @@
   text-transform: uppercase;
   color: $color-blue-1;
 }
+
+.knitting-order__note {
+  display: none;
+  @include set-font-family($web-font-1, $main-font);
+  @include set-font-style(16px, 30px, normal);
+  color: $color-gray-2;
+}
+
+@media (min-width: $tablet-size) {
+  .knitting-order__note {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .knitting-order__note {
+    display: block;
+  }
+}

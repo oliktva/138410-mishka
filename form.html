@@ -8,22 +8,46 @@
   <body>
     <header class="page-header page-wrapper">
       <div class="logo">
-        <img src="img/logo-mobile.svg" width="85" height="35" alt="Mishka">
+        <img class="logo__mobile" src="img/logo-mobile.svg" width="85" height="35" alt="Mishka">
+        <img class="logo__tablet" src="img/logo-mobile.svg" width="113" height="46" alt="Mishka">
+        <img class="logo__desktop" src="img/logo-mobile.svg" width="149" height="72" alt="Mishka">
         <a class="logo--hamburger" href=""></a>
       </div>
       <nav class="top-nav top-nav--hidden">
         <ul class="top-nav__list">
+          <li class="top-nav__item  top-nav__item--min-max">
+            <a class="top-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="top-nav__item  top-nav__item--min-max">
+            <a class="top-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="top-nav__item   top-nav__item--search">
+            <a class="top-nav__link" href="">Поиск по сайту</a>
+          </li>
+          <li class="top-nav__item   top-nav__item--basket">
+            <a class="top-nav__link" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="top-nav__list  top-nav__list--tablet">
           <li class="top-nav__item">
             <a class="top-nav__link" href="">Каталог товаров</a>
           </li>
           <li class="top-nav__item">
             <a class="top-nav__link" href="">Вязание на заказ</a>
           </li>
-          <li class="top-nav__item  top-nav__item--search">
-            <a class="top-nav__link" href="">Поиск по сайту</a>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="">Бесплатная доставка по России</a>
           </li>
-          <li class="top-nav__item  top-nav__item--basket">
-            <a class="top-nav__link" href="">Корзина: пока пуста</a>
+        </ul>
+        <ul class="top-nav__list  top-nav__list--desktop">
+          <li class="top-nav__item">
+            <a class="top-nav__link  top-nav__link--desktop" href="">Новые поступления</a>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link  top-nav__link--desktop" href="">Распродажа</a>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link  top-nav__link--delivery" href="">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -118,13 +142,15 @@
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">E-mail</span>
-            <input class="form-list__text  form-list__text--mail" type="text" name="mail" placeholder="Ваш e-mail">
+            <input class="form-list__text  form-list__text--mail  form-list__text--mobile" type="text" name="mail" placeholder="Ваш e-mail">
+            <input class="form-list__text  form-list__text--mail  form-list__text--not-mobile" type="text" name="mail" placeholder="Мы не будем спамить, честно!">
           </div>
           <div class="knitting-order__item">
             <span class="knitting-order__title">Доп</span>
             <textarea class="form-list__textarea" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <input class="btn" type="submit" value="Отправить заказ">
+          <span class="knitting-order__note">Все поля являются обязательными</span>
         </form>
       </section>
     </main>
