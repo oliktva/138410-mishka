@@ -7,18 +7,16 @@
   </head>
   <body>
     <header class="page-header page-wrapper">
-      <div class="logo">
-        <img class="logo__mobile" src="img/logo-mobile.svg" width="85" height="35" alt="Mishka">
-        <img class="logo__tablet" src="img/logo-mobile.svg" width="113" height="46" alt="Mishka">
-        <img class="logo__desktop" src="img/logo-mobile.svg" width="149" height="72" alt="Mishka">
-        <a class="logo--hamburger" href=""></a>
-      </div>
       <nav class="top-nav top-nav--hidden">
         <ul class="top-nav__list">
-          <li class="top-nav__item  top-nav__item--min-max">
+          <li class="top-nav__item top-nav__item--logp">
+            <img class="logo__mobile" src="img/logo-mobile.svg" width="85" height="35" alt="Mishka">
+            <a class="logo--hamburger" href=""></a>
+          </li>
+          <li class="top-nav__item top-nav__item--catalog">
             <a class="top-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="top-nav__item  top-nav__item--min-max">
+          <li class="top-nav__item top-nav__item--knitting">
             <a class="top-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="top-nav__item   top-nav__item--search">
@@ -28,26 +26,21 @@
             <a class="top-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="top-nav__list  top-nav__list--tablet">
-          <li class="top-nav__item">
-            <a class="top-nav__link" href="">Каталог товаров</a>
+        <ul class="top-nav__sub-list">
+          <li class="top-nav__item top-nav__item--catalog">
+            <a class="top-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="top-nav__item">
-            <a class="top-nav__link" href="">Вязание на заказ</a>
+          <li class="top-nav__item top-nav__item--knitting">
+            <a class="top-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="top-nav__item  top-nav__item--new">
+            <a class="top-nav__link" href="">Новые поступления</a>
+          </li>
+          <li class="top-nav__item  top-nav__item--sale">
+            <a class="top-nav__link" href="">Распродажа</a>
           </li>
           <li class="top-nav__item">
             <a class="top-nav__link" href="">Бесплатная доставка по России</a>
-          </li>
-        </ul>
-        <ul class="top-nav__list  top-nav__list--desktop">
-          <li class="top-nav__item">
-            <a class="top-nav__link  top-nav__link--desktop" href="">Новые поступления</a>
-          </li>
-          <li class="top-nav__item">
-            <a class="top-nav__link  top-nav__link--desktop" href="">Распродажа</a>
-          </li>
-          <li class="top-nav__item">
-            <a class="top-nav__link  top-nav__link--delivery" href="">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -59,38 +52,44 @@
       <section class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--objects" href="">Предметы интерьера</a>
+            <a class="main-nav__link  main-nav__link--objects" href="">Предметы<br>интерьера</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--toys" href="">Детские игрушки</a>
+            <a class="main-nav__link  main-nav__link--toys" href="">Детские<br>игрушки</a>
           </li>
         </ul>
       </section>
       <section class="week-product">
-        <h2 class="week-product__title">Вязанные корзинки</h2>
-        <span class="week-product__label">Товар недели</span>
-        <p class="week-product__descr">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <ul class="week-product__prop">
-          <li class="week-product__prop-item">
-            <span class="week-product__prop-name">Цвет:</span>
-            <span class="week-product__prop-value">&laquo;Тиффани&raquo;/серый</span>
-          </li>
-          <li class="week-product__prop-item">
-            <span class="week-product__prop-name">Диаметр:</span>
-            <span class="week-product__prop-value">25 см</span>
-          </li>
-          <li class="week-product__prop-item">
-            <span class="week-product__prop-name">Высота:</span>
-            <span class="week-product__prop-value">15 см</span>
-         </li>
-        </ul>
+        <div class="week-product__titles">
+          <h2 class="week-product__title">Вязанные корзинки</h2>
+          <span class="week-product__label">Товар недели</span>
+        </div>
+        <div class="week-product__text">
+          <p class="week-product__descr">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <ul class="week-product__prop">
+            <li class="week-product__prop-item">
+              <span class="week-product__prop-name">Цвет:</span>
+              <span class="week-product__prop-value">&laquo;Тиффани&raquo;/серый</span>
+            </li>
+            <li class="week-product__prop-item">
+              <span class="week-product__prop-name">Диаметр:</span>
+              <span class="week-product__prop-value">25 см</span>
+            </li>
+            <li class="week-product__prop-item">
+              <span class="week-product__prop-name">Высота:</span>
+              <span class="week-product__prop-value">15 см</span>
+           </li>
+          </ul>
+        </div>
         <div class="week-product__img">
           <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
         </div>
-        <span class="week-product__price">Цена 990 руб.</span>
-        <button class="btn" name="order">Заказать</button>
+        <div class="week-product__order">
+          <span class="week-product__price">Цена 990 руб.</span>
+          <button class="btn" name="order">Заказать</button>
+        </div>
       </section>
       <section class="about-shop">
         <h2 class="about-shop__title">Коротко о нас:</h2>
@@ -217,8 +216,20 @@
           <a class="reviews__link" href="">@misssssiskras</a>
         </div>
         <div class="reviews__pagination">
-          <button class="reviews__btn  reviews__btn--left" name="left"></button>
-          <button class="reviews__btn  reviews__btn--right" name="right"></button>
+          <button class="reviews__btn  reviews__btn--left" name="left">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+            <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175
+            	7.661,15.002 50,15.002 "/>
+            </svg>
+          </button>
+          <button class="reviews__btn  reviews__btn--right" name="right">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+            <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175
+            	42.339,15.002 0,15.002 "/>
+              </svg>
+          </button>
         </div>
         <button class="btn" name="write">Написать</button>
       </section>

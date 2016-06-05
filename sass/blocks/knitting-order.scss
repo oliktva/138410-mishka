@@ -27,6 +27,10 @@
 }
 
 @media (min-width: $tablet-size) {
+  .knitting-order__item {
+    display: flex;
+  }
+
   .knitting-order__note {
     display: block;
   }

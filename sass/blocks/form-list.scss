@@ -99,27 +99,13 @@
 }
 
 @media (min-width: $tablet-size) {
-  .form-list__text {
-
-    &--not-mobile {
-      display: block;
-    }
-
-    &--mobile {
-      display: none;
-    }
+  .form-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
   }
 }
 
 @media (min-width: $desktop-size) {
-  .form-list__text {
-
-    &--not-mobile {
-      display: block;
-    }
-
-    &--mobile {
-      display: none;
-    }
-  }
 }

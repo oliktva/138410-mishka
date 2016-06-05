@@ -9,14 +9,34 @@
 }
 
 .about-shop__descr {
-    @include set-font-style(16px, auto);
+  @include set-font-style(16px, auto);
 }
 
 .about-shop__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   @include list-style-none();
+}
+
+.about-shop__img {
+  margin: 10px 0;
 }
 
 .about-shop__img svg,
 .about-shop__img path {
   fill: $color-blue-1;
+}
+
+@media (min-width: $tablet-size) {
+  .about-shop__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .about-shop__item {
+    box-sizing: border-box;
+    width: 50%;
+  }
 }
