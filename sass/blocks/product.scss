@@ -29,3 +29,36 @@
   background-color: $color-white-1;
   border: none;
 }
+
+@media (min-width: $tablet-size) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .product__img {
+  }
+
+  .product__wrapper {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .product__img {
+    width: 100%;
+  }
+
+  .product__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

@@ -5,6 +5,7 @@ $color-blue-3: #62d1ba;
 $color-gray-1: #f1f1f1;
 $color-gray-2: #444;
 $color-gray-3: #ececec;
+$color-gray-4: #e5e5e5;
 $color-black-1: #000;
 $color-white-1: #fff;
 
@@ -12,4 +13,9 @@ $color-white-1: #fff;
 $main-font: "Verdana";
 $second-font: "Tahoma";
 $web-font-1: "OpenSans";
-$web-font-2: "OpenSans Bold"
+$web-font-2: "OpenSans Bold";
+
+//break points
+$mobile-size: 320px;
+$tablet-size: 768px;
+$desktop-size: 1150px;

@@ -1,23 +1,16 @@
 .social-link {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   height: 27px;
+  padding: 0 20px;
   font-size: 0;
 
   &--inst {
-    background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
-    background-size: 21px 21px;
   }
 
   &--fb {
-    background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
-    background-size: 14px 27px;
   }
 
   &--tw {
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-size: 23px 20px;
   }
 }

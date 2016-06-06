@@ -3,3 +3,12 @@
 
   border: 1px red dashed;
 }
+
+@media (min-width: $desktop-size) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

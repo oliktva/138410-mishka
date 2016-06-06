@@ -16,3 +16,14 @@
   padding: 25px;
   border: 1px $color-gray-3 solid;
 }
+
+@media (min-width: $tablet-size) {
+  .production-process {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production-process__img {
+    order: -1;
+  }
+}
