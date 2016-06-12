@@ -1,14 +1,27 @@
 .copyright {
-  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 69px;
+  min-height: 85px;
   @include set-font-style(18px, 18px);
+}
+
+.copyright__title {
+  margin-right: 15px;
 }
 
 .copyright__link {
   display: block;
-  height: 34px;
   font-size: 0;
 }
 
 .copyright__link svg {
   fill: $color-blue-1;
+}
+
+@media (min-width: $tablet-size) {
+  .copyright {
+    padding: 0;
+  }
 }

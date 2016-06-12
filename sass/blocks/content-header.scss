@@ -1,9 +1,21 @@
 .content-header {
   background-color: $color-gray-1;
-  padding: 45px;
+  padding: 55px 39px;
 }
 
 .content-header__title {
-  @include set-font-style(24px, 30px);
+  @include set-font-style($header-section-mobile, normal);
   text-align: center;
+}
+
+@media (min-width: $tablet-size) {
+  .content-header__title {
+    @include set-font-style($header-section-tablet, normal);
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .content-header__title {
+    @include set-font-style($header-section-desktop, normal);
+  }
 }

@@ -5,63 +5,182 @@
  @include list-style-none();
 }
 
-.top-nav__sub-list {
-  @include list-style-none();
-  display: none;
-}
+.top-nav__item {
+  border-bottom: 1px $color-gray-3 solid;
 
-.top-nav__list .top-nav__item--knitting,
-.top-nav__list .top-nav__item--catalog {
-  display: block;
-}
-
-.top-nav__link {
-    display: block;
-    padding: 27px;
-    padding-left: 70px;
-  @include set-font-style(16px, 24px);
-  color: $color-black-1;
-}
-
-@media (min-width: $tablet-size) {
-  .top-nav__list .top-nav__item--knitting,
-  .top-nav__list .top-nav__item--catalog,
-  .top-nav__item--new,
-  .top-nav__item--sale {
+  &--new,
+  &--sale,
+  &--delivery {
     display: none;
   }
 
-  .top-nav__sub-list .top-nav__item--knitting,
-  .top-nav__sub-list .top-nav__item--catalog {
-    display: block;
+  &--search svg {
+    display: none;
   }
 
+  &--logo {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px $color-gray-3 solid;
+  }
+}
+
+.top-nav__link {
+  display: block;
+  box-sizing: border-box;
+  min-height: 78px;
+  padding: 27px;
+  padding-left: 70px;
+  @include set-font-style(16px, normal);
+  color: $color-black-1;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-size) {
   .top-nav__list {
-   display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
-  .top-nav__sub-list {
-   display: flex;
+  .top-nav__item {
+    &--logo {
+      box-sizing: border-box;
+      width: 370px;
+      min-height: 88px;
+      padding-left: 50px;
+      border-top: none;
+    }
+
+    &--search {
+      position: relative;
+      width: 82px;
+      height: 88px;
+      padding: 0;
+      border: 1px $color-gray-3 solid;
+      border-top: none;
+    }
+
+    &--search svg {
+      position: absolute;
+      top: 36px;
+      left: 33px;
+      display: block;
+      fill: $color-gray-5;
+    }
+
+    &--catalog {
+      order: 1;
+      border: none;
+    }
+
+    &--knitting {
+      order: 2;
+      border: none;
+    }
+
+    &--delivery {
+      display: block;
+      order: 3;
+      margin-left: auto;
+      border: none;
+    }
+
+    &--basket {
+      flex-grow: 2;
+    }
+  }
+
+  .top-nav__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 88px;
+
+    &--search {
+      font-size: 0;
+      width: 82px;
+      height: 88px;
+    }
+
+    &--catalog {
+      padding: 18px;
+      padding-left: 50px;
+      @include set-font-style(14px, normal);
+    }
+
+    &--knitting {
+      padding: 18px;
+      @include set-font-style(14px, normal);
+    }
+
+    &--delivery {
+      padding: 18px 55px;
+      @include set-font-style(14px, normal, normal);
+      color: $color-gray-2;
+    }
   }
 }
 
 @media (min-width: $desktop-size) {
-  .top-nav__sub-list {
-    display: flex;
+  .top-nav__item {
+    &--logo {
+      order: 1;
+      width: 300px;
+      height: 88px;
+    }
+
+    &--search {
+      order: 2;
+    }
+
+    &--catalog {
+      order: 0;
+      padding: 0px 8px;
+      border-bottom: 1px $color-gray-3 solid;
+      border-right: 1px $color-gray-3 solid;
+    }
+
+    &--knitting {
+      padding: 0px 8px;
+      order: 0;
+      border-bottom: 1px $color-gray-3 solid;
+    }
+
+    &--basket {
+      order: 2;
+    }
+
+    &--new,
+    &--sale {
+      display: block;
+      order: 3;
+      border: none;
+    }
   }
 
-  .top-nav__list .top-nav__item--knitting,
-  .top-nav__list .top-nav__item--catalog {
-    display: block;
-  }
+  .top-nav__link {
+    box-sizing: border-box;
+    height: 88px;
 
-  .top-nav__sub-list .top-nav__item--knitting,
-  .top-nav__sub-list .top-nav__item--catalog {
-    display: none;
-  }
+    &--catalog {
+      @include set-font-style(16px, normal);
+    }
 
-  .top-nav__item--new,
-  .top-nav__item--sale {
-    display: block;
+    &--knitting {
+      @include set-font-style(16px, normal);
+    }
+
+    &--new{
+      padding: 30px;
+      padding-left: 50px;
+      @include set-font-style(14px, normal);
+    }
+    &--sale {
+      padding: 30px;
+      padding-left: 0;
+      @include set-font-style(14px, normal);
+    }
   }
 }

@@ -23,6 +23,10 @@
 }
 
 @media (min-width: $tablet-size) {
+  .main-nav {
+    margin: 0 50px;
+  }
+
   .main-nav__item {
     display: inline-block;
     vertical-align: top;
@@ -31,6 +35,10 @@
 }
 
 @media (min-width: $desktop-size) {
+  .main-nav {
+    margin: 0 50px;
+  }
+
   .main-nav__item {
     display: inline-block;
     vertical-align: top;

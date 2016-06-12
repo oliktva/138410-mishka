@@ -1,5 +1,16 @@
+.catalog-item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-size) {
+  .catalog-item {
+    margin-bottom: 52px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .catalog-item {
-    width: 27%;
+    display: flex;
+    width: 30%;
   }
 }

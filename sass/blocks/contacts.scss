@@ -1,11 +1,16 @@
 .contacts {
-  padding: 30px;
-  border: 1px red dashed;
+  padding: 0 30px;
+  padding-top: 60px;
+
+  & .btn {
+    width: 100%;
+    margin: 39px 0;
+  }
 }
 
 .contacts__title {
-  margin: 0;
-  @include set-font-style(24px, 30px);
+  margin: 24px 0;
+  @include set-font-style($header-section-mobile, normal);
 }
 
 .contacts__info {
@@ -19,4 +24,90 @@
   @include set-font-family($web-font-1, $main-font);
   @include set-font-style(14px, 30px, normal);
   color: $color-gray-2;
+}
+
+.contacts__info-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.contacts__info-name {
+  display: block;
+  width: 78px;
+}
+
+.contacts__info-value {
+  display: block;
+}
+
+.contacts__map {
+  height: 457px;
+  width: $mobile-size;
+  margin: 0 -30px;
+  background: green;
+}
+
+@media (min-width: $tablet-size) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 45px;
+    padding-top: 140px;
+    padding-bottom: 18px;
+  }
+  .contacts__title {
+    @include set-font-style($header-section-tablet, normal);
+  }
+
+  .contacts__info {
+    display: flex;
+    padding-top: 25px;
+  }
+
+  .contacts__info-item {
+    margin-right: 65px;
+    @include set-font-style(16px, 30px, normal);
+  }
+
+  .contacts__map {
+    width: $tablet-size;
+    margin: 27px -50px;
+  }
+
+  .contacts .btn {
+      width: 230px;
+      margin-top: 27px;
+      align-self: center;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .contacts {
+    position: relative;
+    margin-left: 175px;
+    padding-top: 170px;
+  }
+
+  .contacts__title {
+    width: 50%;
+    @include set-font-style($header-section-desktop, normal);
+  }
+
+  .contacts__info {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    position: absolute;
+    right: 100px;
+    top: 98px;
+    width: 525px;
+  }
+
+  .contacts .btn {
+    width: 230px;
+    margin: 45px 10px;
+    align-self: flex-start;
+  }
 }

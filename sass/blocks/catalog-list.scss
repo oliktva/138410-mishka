@@ -1,7 +1,11 @@
 .catalog-list {
   @include list-style-none(30px);
+}
 
-  border: 1px red dashed;
+@media (min-width: $tablet-size) {
+  .catalog-list {
+    padding: 50px;
+  }
 }
 
 @media (min-width: $desktop-size) {
@@ -10,5 +14,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
   }
 }
