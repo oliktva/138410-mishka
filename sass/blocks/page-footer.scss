@@ -22,3 +22,9 @@
     background-color: green;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .page-footer {
+    margin-top: 45px;
+  }
+}

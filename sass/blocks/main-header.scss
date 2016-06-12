@@ -12,7 +12,7 @@
 
 .main-header__title {
   margin: 0;
-  @include set-font-style(24px, 30px);
+  @include set-font-style($header-section-mobile, normal);
   color: $color-black-1;
   text-align: center;
 }
@@ -23,7 +23,7 @@
   }
 
   .main-header__title {
-    @include set-font-style(40px, 50px);
+    @include set-font-style($header-section-tablet, normal);
   }
 }
 
@@ -33,6 +33,6 @@
   }
 
   .main-header__title {
-    @include set-font-style(50px, 57px);
+    @include set-font-style($header-section-desktop, normal);
   }
 }

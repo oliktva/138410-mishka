@@ -2,6 +2,12 @@
   @include list-style-none(30px);
 }
 
+@media (min-width: $tablet-size) {
+  .catalog-list {
+    padding: 50px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .catalog-list {
     display: flex;

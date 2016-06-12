@@ -2,9 +2,15 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: $tablet-size) {
+  .catalog-item {
+    margin-bottom: 52px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .catalog-item {
     display: flex;
-    width: 27%;
+    width: 30%;
   }
 }

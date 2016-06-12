@@ -9,7 +9,7 @@
 
 .reviews__title {
   margin: 0;
-  @include set-font-style(24px, 30px);
+  @include set-font-style($header-section-mobile, normal);
 }
 
 .reviews__item {
@@ -60,6 +60,7 @@
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 70px 45px;
   }
 
   .reviews .btn {
@@ -70,34 +71,43 @@
   .reviews__title {
     width: 74%;
     order: -2;
-    @include set-font-style(40px, 50px);
+    @include set-font-style($header-section-tablet, normal);
   }
 
   .reviews__text {
     @include set-font-style(16px, 30px, normal);
   }
 
+  .reviews__item {
+    padding-top: 40px;
+  }
+
   .reviews__pagination {
     position: absolute;
-    bottom: 10px;
-    right: 15px;
+    bottom: 78px;
+    right: 55px;
   }
 
   .reviews__btn {
-    width: 110px;
+    width: 80px;
     margin: 0;
     border: none;
   }
 }
 
 @media (min-width: $desktop-size) {
+  .reviews {
+    padding: 35px 50px;
+  }
+
   .reviews__title {
     width: 525px;
     margin: 0 175px;
+    @include set-font-style($header-section-desktop, normal);
   }
 
   .reviews__item {
-    margin: 0 175px;
+    margin: 50px 175px;
   }
 
   .reviews .btn {

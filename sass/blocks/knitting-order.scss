@@ -10,6 +10,8 @@
   @include set-font-family($web-font-1, $main-font);
   @include set-font-style(14px, 24px, normal);
   color: $color-gray-2;
+  margin: 0;
+  padding: 0 30px;
 
   & br {
     display: none;
@@ -36,11 +38,12 @@
 @media (min-width: $tablet-size) {
   .knitting-order__item {
     display: flex;
-    padding: 60px 50px;
+    padding: 50px;
   }
 
   .knitting-order__descr {
     padding: 0 50px;
+    @include set-font-style(16px, normal, normal);
 
     & br {
       display: inline;
@@ -80,11 +83,29 @@
 }
 
 @media (min-width: $desktop-size) {
+  .knitting-order__title {
+    width: 108px;
+    padding-left: 60px;
+  }
+
   .knitting-order__note {
     display: block;
   }
 
   .knitting-order__descr {
     margin: 0 175px;
+  }
+
+  .knitting-order__item {
+    &--name,
+    &--phone,
+    &--email,
+    &--add {
+      margin-right: 175px;
+    }
+  }
+
+  .knitting-order__footer {
+    margin: 40px 220px;
   }
 }

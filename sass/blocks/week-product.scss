@@ -13,7 +13,7 @@
 .week-product__title {
   letter-spacing: -2px;
   margin: 0;
-  @include set-font-style(24px, 30px);
+  @include set-font-style($header-section-mobile, normal);
   color: $color-black-1;
 }
 
@@ -73,6 +73,22 @@
   margin-top: 9px;
 }
 
+.week-product__img {
+  position: relative;
+  overflow: hidden;
+  height: 315px;
+
+  & img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+  }
+}
+
 @media (min-width: $tablet-size) {
   .week-product {
     flex-direction: row;
@@ -82,14 +98,15 @@
   }
   .week-product__titles {
     width: 100%;
-    margin-bottom: 55px;
+    margin-top: 10px;
+    margin-bottom: 59px;
     justify-content: space-between;
     align-items: flex-end;
   }
 
   .week-product__title {
     width: 500px;
-    @include set-font-style(40px, 50px);
+    @include set-font-style($header-section-tablet, normal);
   }
 
   .week-product__label {
@@ -110,7 +127,6 @@
     width: 50%;
     height: 404px;
     padding-left: 44px;
-    background-color: red;
   }
 
   .week-product__order {
@@ -125,13 +141,20 @@
 
   .week-product__descr {
     margin: 0;
+    margin-bottom: 35px;
+    @include set-font-style(16px, 30px);
+  }
+
+  .week-product__prop {
+    margin: 0;
+    @include set-font-style(15px, 20px);
   }
 }
 
 @media (min-width: $desktop-size) {
   .week-product {
     position: relative;
-    margin-top: 70px;
+    margin-top: 85px;
   }
 
   .week-product__label {
@@ -142,16 +165,17 @@
 
   .week-product__text {
     padding-left: 175px;
-    padding-bottom: 222px;
+    padding-bottom: 210px;
   }
 
   .week-product__img {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
     z-index: -1;
+    width: 524px;
     height: 635px;
-    padding-left: 56px;
   }
 
   .week-product__titles {
@@ -160,7 +184,8 @@
 
   .week-product__title {
     width: 545px;
-    @include set-font-style(50px, 57px);
+    margin-top: 0;
+    @include set-font-style($header-section-desktop, normal);
   }
 
   .week-product__order {

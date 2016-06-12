@@ -137,11 +137,13 @@
 
     &--catalog {
       order: 0;
+      padding: 0px 8px;
       border-bottom: 1px $color-gray-3 solid;
       border-right: 1px $color-gray-3 solid;
     }
 
     &--knitting {
+      padding: 0px 8px;
       order: 0;
       border-bottom: 1px $color-gray-3 solid;
     }
