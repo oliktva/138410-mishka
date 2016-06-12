@@ -1,5 +1,10 @@
+.catalog-item {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $desktop-size) {
   .catalog-item {
+    display: flex;
     width: 27%;
   }
 }

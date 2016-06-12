@@ -1,2 +1,7 @@
-.social-lst {
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 85px;
+  margin: 0 80px;
 }

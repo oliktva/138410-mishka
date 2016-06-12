@@ -1,12 +1,24 @@
 .page-footer {
   background-color: $color-gray-1;
-  border: 1px red dashed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 @media (min-width: $tablet-size) {
   .page-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 28px 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 175px;
+    background-color: green;
   }
 }

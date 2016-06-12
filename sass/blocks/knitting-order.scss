@@ -1,12 +1,19 @@
 .knitting-order {
-  padding: 30px;
-  border: red 1px dashed;
+  padding: 30px 0;
+}
+
+.knitting-order__item {
+  padding: 0 30px;
 }
 
 .knitting-order__descr {
   @include set-font-family($web-font-1, $main-font);
   @include set-font-style(14px, 24px, normal);
   color: $color-gray-2;
+
+  & br {
+    display: none;
+  }
 }
 
 
@@ -29,15 +36,55 @@
 @media (min-width: $tablet-size) {
   .knitting-order__item {
     display: flex;
+    padding: 60px 50px;
+  }
+
+  .knitting-order__descr {
+    padding: 0 50px;
+
+    & br {
+      display: inline;
+    }
   }
 
   .knitting-order__note {
     display: block;
+  }
+
+  .knitting-order__title {
+    width: 167px;
+  }
+
+  .knitting-order__item--color,
+  .knitting-order__item--phone,
+  .knitting-order__item--email {
+    background: $color-gray-1;
+  }
+
+  .knitting-order__item--phone {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .knitting-order__item--email {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  .knitting-order__item--add {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 @media (min-width: $desktop-size) {
   .knitting-order__note {
     display: block;
+  }
+
+  .knitting-order__descr {
+    margin: 0 175px;
   }
 }
