@@ -62,7 +62,7 @@
 
   .contacts__info {
     display: flex;
-    padding-top: 25px;
+    padding-top: 31px;
   }
 
   .contacts__info-item {
@@ -72,7 +72,7 @@
 
   .contacts__map {
     width: $tablet-size;
-    margin: 27px -50px;
+    margin: 27px -45px;
   }
 
   .contacts .btn {
@@ -86,7 +86,8 @@
   .contacts {
     position: relative;
     margin-left: 175px;
-    padding-top: 170px;
+    padding-top: 142px;
+    padding-bottom: 60px;
   }
 
   .contacts__title {
@@ -96,18 +97,19 @@
 
   .contacts__info {
     flex-direction: column;
+    padding-top: 25px;
   }
 
   .contacts__map {
     position: absolute;
-    right: 100px;
-    top: 98px;
+    right: 97px;
+    top: 75px;
     width: 525px;
   }
 
   .contacts .btn {
     width: 230px;
-    margin: 45px 10px;
+    margin: 49px 4px;
     align-self: flex-start;
   }
 }

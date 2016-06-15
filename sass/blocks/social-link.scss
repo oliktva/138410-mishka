@@ -3,13 +3,17 @@
   vertical-align: top;
   padding: 0 20px;
   font-size: 0;
+}
 
-  &--inst {
-  }
+@media (min-width: $desktop-size) {
+  .social-link {
+    &:hover path {
+      fill: $color-blue-5;
+    }
 
-  &--fb {
-  }
-
-  &--tw {
+    &:active path {
+      fill: $color-blue-5;
+      opacity: 0.3;
+    }
   }
 }

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 69px;
-  min-height: 85px;
+  min-height: 80px;
   @include set-font-style(18px, 18px);
 }
 
@@ -13,6 +13,7 @@
 
 .copyright__link {
   display: block;
+  margin-top: 5px;
   font-size: 0;
 }
 
@@ -22,6 +23,15 @@
 
 @media (min-width: $tablet-size) {
   .copyright {
+    min-height: 90px;
     padding: 0;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .copyright__link {
+    margin-top: 15px;
   }
 }

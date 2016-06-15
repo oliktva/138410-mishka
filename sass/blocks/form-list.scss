@@ -10,7 +10,7 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  margin-top: 15px;
+  margin-top: 19px;
   @include set-font-family();
   @include set-font-style(16px, 18px);
   color: $color-black-1;
@@ -59,7 +59,7 @@
   top: 0;
   left: 0;
   width: 35px;
-  height: 39px;
+  height: 37px;
   background-color: transparent;
   border: 2px $color-gray-2 solid;
   border-radius: 50%;
@@ -70,10 +70,10 @@
   content: '';
   position: absolute;
   display: block;
-  top: 13px;
+  top: 11px;
   left: 13px;
-  width: 17px;
-  height: 17px;
+  width: 14px;
+  height: 16px;
   border-radius: 50%;
   background-color: $color-blue-3;
   z-index: 100;
@@ -85,8 +85,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 39px;
-  height: 39px;
+  width: 37px;
+  height: 37px;
   background-color: transparent;
   border: 2px $color-gray-2 solid;
   cursor: pointer;
@@ -95,8 +95,8 @@
 .form-list__input[type="checkbox"]:checked + span::after {
   content: '';
   position: absolute;
-  top: 13px;
-  left: 11px;
+  top: 11px;
+  left: 9px;
   display: block;
   width: 22px;
   height: 17px;
@@ -219,7 +219,12 @@
     }
 
     &--checkbox {
-      width: 265px; 
+      width: 265px;
     }
+  }
+
+  .form-list__text,
+  .form-list__textarea {
+    margin-right: 175px;
   }
 }

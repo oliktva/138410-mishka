@@ -9,12 +9,42 @@
 }
 
 @media (min-width: $tablet-size) {
+  .content-header {
+    position: relative;
+    margin-top: -53px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: -50px;
+        display: block;
+        width: 768px;
+        height: 35px;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-size: contain;
+    }
+  }
+
   .content-header__title {
+    margin-top: 37px;
     @include set-font-style($header-section-tablet, normal);
   }
 }
 
 @media (min-width: $desktop-size) {
+  .content-header {
+    min-height: 163px;
+    margin-top: -57px;
+    
+    &::after {
+      bottom: -1px;
+      width: 1150px;
+      background-size: cover;
+    }
+  }
+
   .content-header__title {
     @include set-font-style($header-section-desktop, normal);
   }

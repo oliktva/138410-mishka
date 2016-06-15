@@ -23,6 +23,10 @@
     text-align: center;
     border-top: 1px $color-gray-3 solid;
   }
+
+  &--basket svg {
+    display: none;
+  }
 }
 
 .top-nav__link {
@@ -47,9 +51,9 @@
   .top-nav__item {
     &--logo {
       box-sizing: border-box;
-      width: 370px;
       min-height: 88px;
-      padding-left: 50px;
+      padding-left: 49px;
+      padding-right: 210px;
       border-top: none;
     }
 
@@ -67,7 +71,10 @@
       top: 36px;
       left: 33px;
       display: block;
-      fill: $color-gray-5;
+
+      & path {
+        fill: $color-gray-5;
+      }
     }
 
     &--catalog {
@@ -88,7 +95,19 @@
     }
 
     &--basket {
+      position: relative;
       flex-grow: 2;
+
+      & svg {
+        position: absolute;
+        top: 34px;
+        left: 30px;
+        display: block;
+
+        & path {
+          fill: $color-gray-5;
+        }
+      }
     }
   }
 
@@ -105,17 +124,20 @@
     }
 
     &--catalog {
+      min-height: 37px;
       padding: 18px;
       padding-left: 50px;
       @include set-font-style(14px, normal);
     }
 
     &--knitting {
-      padding: 18px;
+      min-height: 37px;
+      padding: 0 34px;
       @include set-font-style(14px, normal);
     }
 
     &--delivery {
+      min-height: 37px;
       padding: 18px 55px;
       @include set-font-style(14px, normal, normal);
       color: $color-gray-2;
@@ -127,12 +149,31 @@
   .top-nav__item {
     &--logo {
       order: 1;
-      width: 300px;
+      width: 266px;
       height: 88px;
+      padding: 7px 17px;
+      text-align: left;
+    }
+
+    &--logo:hover img{
+      opacity: 0.6;
+    }
+
+    &--logo:active img{
+      opacity: 0.3;
     }
 
     &--search {
       order: 2;
+
+      &:hover path {
+        fill: $color-blue-1;
+      }
+
+      &:active path {
+        fill: $color-blue-1;
+        opacity: 0.3;
+      }
     }
 
     &--catalog {
@@ -150,6 +191,15 @@
 
     &--basket {
       order: 2;
+
+      &:hover path {
+        fill: $color-blue-1;
+      }
+
+      &:active path {
+        fill: $color-blue-1;
+        opacity: 0.3;
+      }
     }
 
     &--new,
@@ -162,7 +212,15 @@
 
   .top-nav__link {
     box-sizing: border-box;
-    height: 88px;
+    min-height: 88px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &--catalog {
       @include set-font-style(16px, normal);
@@ -173,14 +231,22 @@
     }
 
     &--new{
-      padding: 30px;
+      min-height: 37px;
+      padding: 20px;
       padding-left: 50px;
       @include set-font-style(14px, normal);
     }
     &--sale {
-      padding: 30px;
-      padding-left: 0;
+      min-height: 37px;
+      padding: 20px;
+      padding-left: 40px;
       @include set-font-style(14px, normal);
+    }
+
+    &--delivery {
+        min-height: 37px;
+        padding: 20px;
+        padding-right: 55px;
     }
   }
 }
