@@ -9,4 +9,14 @@
   outline: none;
   text-decoration: none;
   user-select: none;
+
+  &:hover {
+    color: $color-white-1;
+    background-color: $color-gray-2;
+  }
+
+  &:active {
+    color: $color-gray-7;
+    background-color: $color-gray-2;
+  }
 }

@@ -24,6 +24,16 @@
   @include set-font-family($web-font-1, $main-font);
   @include set-font-style(14px, 30px, normal);
   color: $color-gray-2;
+  border-bottom: 1px $color-blue-3 solid;
+
+  &:hover {
+    color: $color-blue-5;
+  }
+
+  &:active {
+    color: $color-blue-5;
+    opacity: 0.3;
+  }
 }
 
 .contacts__info-item {

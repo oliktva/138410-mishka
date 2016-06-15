@@ -119,5 +119,13 @@
 
   .production-process__wrapper {
     padding-top: 185px;
+
+    &:hover {
+      box-shadow: 5px 0px 10px $color-gray-3;
+    }
+
+    &:active {
+      box-shadow: 3px 0px 5px $color-gray-3;
+    }
   }
 }
