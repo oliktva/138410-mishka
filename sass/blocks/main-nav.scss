@@ -13,7 +13,7 @@
   display: block;
   box-sizing: border-box;
   padding: 27px;
-  @include set-font-family($second-font, $second-font);
+  @include set-font-family($font-2, $font-3);
   @include set-font-style(18px, 24px);
   color: $color-white-1;
 
@@ -64,13 +64,12 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: -25px;
-      left: -50px;
+      bottom: -23px;
+      left: -100px;
       display: block;
-      width: 768px;
+      width: calc(100% + 200px);
       height: 35px;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
       background-size: contain;
     }
   }
@@ -121,8 +120,7 @@
     min-height: 140px;
 
     &--objects:hover {
-      min-height: 145px;
-      margin-top: -5px;
+      transform: translateY(-5px);
       background-color: $color-blue-4;
 
       &::after {
@@ -131,8 +129,7 @@
     }
 
     &--toys:hover {
-      min-height: 145px;
-      margin-top: -5px;
+      transform: translateY(-5px);
       background-color: $color-blue-5;
 
       &::after {

@@ -42,10 +42,26 @@
 
 @media (min-width: $tablet-size) {
   .about-shop {
-    padding: 40px 50px;
+    position: relative;
+    padding: 30px 50px;
+    padding-top: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -10px;
+      display: block;
+      height: 23px;
+      width: calc(100% + 20px);
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .about-shop__title{
+    margin: 34px 0;
     @include set-font-style($header-section-tablet, normal);
   }
 
@@ -59,18 +75,55 @@
     box-sizing: border-box;
     min-height: 160px;
     width: 50%;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
   }
 
   .about-shop__descr {
+    padding-bottom: 40px;
     @include set-font-style(20px, auto);
+  }
+
+  .about-shop__img {
+    padding-top: 5px;
+    padding-left: 5px;
   }
 }
 
 @media (min-width: $desktop-size) {
   .about-shop {
     margin: 0 175px;
-    padding: 75px 50px;
-    padding-bottom: 38px;
+    padding: 68px 50px;
+    padding-bottom: 33px;
+
+    &::before {
+      top: 25px;
+      left: -177px;
+      width: calc(100% + 350px);
+      background-size: cover;
+    }
   }
 
   .about-shop__title{
