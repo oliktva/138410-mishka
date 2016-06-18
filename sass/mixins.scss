@@ -1,4 +1,4 @@
-@mixin set-font-family($font: "Verdana", $safe-font: "Geneva", $font-family: "sans-serif") {
+@mixin set-font-family($font: Verdana, $safe-font: Geneva, $font-family: sans-serif) {
   font-family: $font, $safe-font, $font-family;
 }
 
