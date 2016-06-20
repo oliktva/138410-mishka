@@ -1,6 +1,6 @@
 .content-header {
   background-color: $color-gray-1;
-  padding: 55px 39px;
+  padding: 60px 39px;
 }
 
 .content-header__title {
@@ -9,12 +9,42 @@
 }
 
 @media (min-width: $tablet-size) {
+  .content-header {
+    position: relative;
+    margin-top: -53px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: -50px;
+        display: block;
+        width: calc(100% + 100px);
+        height: 35px;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+  }
+
   .content-header__title {
+    margin-top: 37px;
     @include set-font-style($header-section-tablet, normal);
   }
 }
 
 @media (min-width: $desktop-size) {
+  .content-header {
+    min-height: 163px;
+    margin-top: -57px;
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      width: calc(100% + 200px);
+    }
+  }
+
   .content-header__title {
     @include set-font-style($header-section-desktop, normal);
   }

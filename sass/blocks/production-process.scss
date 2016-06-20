@@ -19,6 +19,18 @@
     min-width: 100%;
 
   }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/icon-play.svg");
+  }
 }
 
 .production-process__title-wrapper {
@@ -46,7 +58,7 @@
 }
 
 .production-process__descr {
-  @include set-font-family($web-font-1, $main-font);
+  @include set-font-family($webfont-1, $font-1);
   @include set-font-style(14px, 24px, normal);
   color: $color-gray-2;
 }
@@ -65,6 +77,7 @@
 @media (min-width: $tablet-size) {
   .production-process {
     position: relative;
+    margin-bottom: 15px;
   }
 
   .production-process__img {
@@ -79,8 +92,8 @@
   }
 
   .production-process__wrapper {
-    padding: 50px;
-    padding-top: 100px;
+    padding: 40px;
+    padding-top: 80px;
     border: 1px $color-gray-3 solid;
   }
 
@@ -90,9 +103,14 @@
 
   .production-process__title {
     position: absolute;
+    max-width: 250px;
     margin-top: 40px;
     margin-left: 100px;
     @include set-font-style(18px, 24px);
+  }
+
+  .production-process .btn {
+    margin-top: 18px;
   }
 }
 
@@ -104,9 +122,15 @@
     padding-left: 683px;
   }
 
+  .production-process .btn {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 38px;
+  }
+
   .production-process__title {
-    margin-top: 80px;
-    margin-left: 30px;
+    margin-top: 100px;
+    margin-left: 55px;
     width: 60%;
   }
 
@@ -115,9 +139,36 @@
     left: 0;
     top: 0;
     width: 683px;
+
+    &:hover::after {
+      transform: scale(1.2, 1.2) translate(-40%, -40%);
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+
+  .production-process__descr {
+     margin: 0;
+     padding-left: 35px;
   }
 
   .production-process__wrapper {
     padding-top: 185px;
+    padding-bottom: 56px;
+
+    & svg {
+      top: 45px;
+      left: 60px;
+    }
+
+    &:hover {
+      box-shadow: 5px 0px 10px $color-gray-3;
+    }
+
+    &:active {
+      box-shadow: 3px 0px 5px $color-gray-3;
+    }
   }
 }

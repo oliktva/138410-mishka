@@ -2,11 +2,22 @@
   padding: 16px;
   background-color: $color-white-1;
   border: 2px $color-gray-2 solid;
+  border-radius: 0;
   color: $color-gray-2;
-  @include set-font-family($web-font-2, $main-font);
+  @include set-font-family($webfont-2, $font-1);
   @include set-font-style(16px, 16px);
   text-transform: uppercase;
   outline: none;
   text-decoration: none;
   user-select: none;
+
+  &:hover {
+    color: $color-white-1;
+    background-color: $color-gray-2;
+  }
+
+  &:active {
+    color: $color-gray-7;
+    background-color: $color-gray-2;
+  }
 }

@@ -4,11 +4,19 @@
 
 .knitting-order__item {
   padding: 0 30px;
+
+  &--email {
+    padding-top: 17px;
+  }
+
+  &--add {
+    padding-top: 11px;
+  }
 }
 
 .knitting-order__descr {
-  @include set-font-family($web-font-1, $main-font);
-  @include set-font-style(14px, 24px, normal);
+  @include set-font-family($webfont-1, $font-1);
+  @include set-font-style(14px, 25px, normal);
   color: $color-gray-2;
   margin: 0;
   padding: 0 30px;
@@ -20,30 +28,82 @@
 
 
 .knitting-order__title {
-  display: block;
-  margin: 28px 0;
-  @include set-font-family($web-font-2, $main-font);
+  position: relative;;
+  display: inline-block;
+  padding-top: 25px;
+  padding-right: 25px;
+  @include set-font-family($webfont-2, $font-1);
   @include set-font-style(16px, 16px);
   text-transform: uppercase;
   color: $color-blue-1;
+  background-color: $color-white-1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: 0;
+    display: block;
+    height: 1px;
+    width: 260px;
+    z-index: -1;
+    background-color: $color-blue-3;
+  }
 }
 
 .knitting-order__note {
   display: none;
-  @include set-font-family($web-font-1, $main-font);
+  @include set-font-family($webfont-1, $font-1);
   @include set-font-style(16px, 30px, normal);
   color: $color-gray-2;
 }
 
+.knitting-order__footer {
+  padding-top: 14px;
+}
+
 @media (min-width: $tablet-size) {
+  .knitting-order {
+    margin-bottom: 25px;
+  }
+
   .knitting-order__item {
     display: flex;
-    padding: 50px;
+    padding: 30px 50px;
+
+    &--color,
+    &--phone {
+      background: $color-gray-1;
+    }
+
+    &--email {
+      padding-bottom: 70px;
+      background: $color-gray-1;
+    }
+
+    &--phone {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 0;
+    }
+
+    &--email {
+      display: flex;
+      flex-direction: row;
+      padding-top: 0;
+    }
+
+    &--add {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .knitting-order__descr {
-    padding: 0 50px;
-    @include set-font-style(16px, normal, normal);
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    @include set-font-style(16px, 26px, normal);
 
     & br {
       display: inline;
@@ -56,29 +116,13 @@
 
   .knitting-order__title {
     width: 167px;
-  }
+    padding-top: 45px;
+    padding-right: 0;
+    background-color: transparent;
 
-  .knitting-order__item--color,
-  .knitting-order__item--phone,
-  .knitting-order__item--email {
-    background: $color-gray-1;
-  }
-
-  .knitting-order__item--phone {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-  }
-
-  .knitting-order__item--email {
-    display: flex;
-    flex-direction: row;
-    padding-top: 0;
-  }
-
-  .knitting-order__item--add {
-    display: flex;
-    flex-direction: row;
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -86,6 +130,7 @@
   .knitting-order__title {
     width: 108px;
     padding-left: 60px;
+    padding-right: 5px;
   }
 
   .knitting-order__note {
@@ -93,16 +138,8 @@
   }
 
   .knitting-order__descr {
+    padding-top: 70px;
     margin: 0 175px;
-  }
-
-  .knitting-order__item {
-    &--name,
-    &--phone,
-    &--email,
-    &--add {
-      margin-right: 175px;
-    }
   }
 
   .knitting-order__footer {

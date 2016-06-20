@@ -17,14 +17,25 @@
   }
 
   .page-footer__logo {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 175px;
-    background-color: green;
   }
 }
 
 @media (min-width: $desktop-size) {
   .page-footer {
     margin-top: 45px;
+  }
+
+  .page-footer__logo {
+    &:hover svg {
+      fill: $color-blue-5;
+    }
+
+    &:active svg {
+      fill: $color-blue-5;
+      opacity: 0.3;
+    }
   }
 }
