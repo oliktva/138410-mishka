@@ -30,6 +30,18 @@
   }
 }
 
+.form-list__text-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-list__text-wrapper svg {
+  position: absolute;
+  bottom: 13px;
+  right: 5px;
+  fill: $color-gray-10;
+}
+
 .form-list__text {
   height: 53px;
   width: 100%;
@@ -45,8 +57,20 @@
 
   &--email {
     margin-top: 5px;
+    background-image: url("../img/symbols.svg#icon-mail");
+    fill: black;
   }
 }
+
+.form-list__text--phone:hover ~ svg,
+.form-list__text--email:hover ~ svg {
+    fill: $color-blue-3;
+  }
+
+  .form-list__text--phone:focus ~ svg,
+  .form-list__text--email:focusr ~ svg {
+      fill: $color-blue-3;
+  }
 
 .form-list__textarea {
   box-sizing: border-box;
@@ -135,6 +159,10 @@
     padding: 15px 0;
   }
 
+  .form-list__text-wrapper svg {
+    right: 20px;
+  }
+
   .form-list__input[type="radio"] + span::before {
     width: 49px;
     height: 47px;
@@ -193,19 +221,19 @@
     }
   }
 
-  .form-list__text--phone {
-    position: relative;
+  .form-list__text-wrapper {
     flex-grow: 2;
-    padding-left: 20px;
     margin-left: 45px;
+  }
+
+  .form-list__text--phone {
+    padding-left: 20px;
     margin-top: 15px;
     background-color: $color-gray-1;
   }
 
   .form-list__text--email {
-    flex-grow: 2;
     padding-left: 20px;
-    margin-left: 45px;
     margin-top: 20px;
     background-color: $color-gray-1;
   }
@@ -243,6 +271,10 @@
   .form-list__text,
   .form-list__textarea {
     margin-right: 175px;
+
+    &--error {
+      border-color: $color-red-1;
+    }
   }
 
   .form-list__label--radio:hover span::before,
