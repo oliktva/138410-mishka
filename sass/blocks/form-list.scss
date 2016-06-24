@@ -62,16 +62,6 @@
   }
 }
 
-.form-list__text--phone:hover ~ svg,
-.form-list__text--email:hover ~ svg {
-    fill: $color-blue-3;
-  }
-
-  .form-list__text--phone:focus ~ svg,
-  .form-list__text--email:focusr ~ svg {
-      fill: $color-blue-3;
-  }
-
 .form-list__textarea {
   box-sizing: border-box;
   height: 150px;
@@ -285,6 +275,16 @@
   .form-list__textarea:focus {
     border-color: $color-blue-3;
   }
+  
+  .form-list__text--phone:hover ~ svg,
+  .form-list__text--email:hover ~ svg {
+      fill: $color-blue-3;
+    }
+
+    .form-list__text--phone:focus ~ svg,
+    .form-list__text--email:focusr ~ svg {
+        fill: $color-blue-3;
+    }
 
   .form-list__label--radio:active span::before,
   .form-list__label--checkbox:active span::before {
