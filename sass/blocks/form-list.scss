@@ -43,6 +43,7 @@
 }
 
 .form-list__text {
+  box-sizing: border-box;
   height: 53px;
   width: 100%;
   border: none;
@@ -275,19 +276,23 @@
   .form-list__textarea:focus {
     border-color: $color-blue-3;
   }
-  
+
   .form-list__text--phone:hover ~ svg,
   .form-list__text--email:hover ~ svg {
       fill: $color-blue-3;
     }
 
     .form-list__text--phone:focus ~ svg,
-    .form-list__text--email:focusr ~ svg {
+    .form-list__text--email:focus ~ svg {
         fill: $color-blue-3;
     }
 
   .form-list__label--radio:active span::before,
   .form-list__label--checkbox:active span::before {
     border-color: $color-gray-8;
+  }
+
+  .form-list__text-wrapper {
+    margin-right: 175px;
   }
 }
