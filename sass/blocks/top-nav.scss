@@ -65,6 +65,8 @@
     height: 2px;
     width: 20px;
     background-color: $color-black-1;
+    transition-duration: 0.3s;
+    transform-origin: center;
 
     &::before {
       content: '';
@@ -75,6 +77,8 @@
       height: 2px;
       width: 20px;
       background-color: $color-black-1;
+      transition-duration: 0.3s;
+      transform-origin: center;
     }
 
     &::after {
@@ -86,6 +90,8 @@
       height: 2px;
       width: 20px;
       background-color: $color-black-1;
+      transition-duration: 0.3s;
+      transform-origin: center;
     }
   }
 
@@ -101,20 +107,22 @@
     top: 0;
     width: 28px;
     transition-duration: 0.3s;
-    visibility: hidden;
+    transform-origin: center;
+    transform: translateY(0) rotate(45deg);
   }
 
   .top-nav__icon-hamburger.active {
     width: 28px;
-    transition-duration: 0.3s;
-    transform: rotate(45deg);
+    transform-origin: center;
+    background-color: transparent;
   }
 
   .top-nav__icon-hamburger.active::after {
     top: 0;
     width: 28px;
     transition-duration: 0.3s;
-    transform: rotate(-90deg);
+    transform-origin: center;
+    transform: translateY(0) rotate(-45deg);
   }
 }
 
