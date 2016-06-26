@@ -55,7 +55,11 @@
   height: 457px;
   width: $mobile-size;
   margin: 0 -30px;
-  background: green;
+}
+
+.contacts__map-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-size) {
