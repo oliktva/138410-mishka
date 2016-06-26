@@ -7,11 +7,11 @@
 
 @media (min-width: $desktop-size) {
   .social-link {
-    &:hover path {
+    &:hover svg {
       fill: $color-blue-5;
     }
 
-    &:active path {
+    &:active svg {
       fill: $color-blue-5;
       opacity: 0.3;
     }
