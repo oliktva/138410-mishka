@@ -42,14 +42,25 @@
     position: relative;
   }
 
-  .top-nav__item:not(:nth-child(1)) {
+  .top-nav__item--hidden {
     display: none;
   }
 
-  .logo-hamburger {
+  .top-nav__logo-hamburger {
     position: absolute;
-    top: calc(50% - 1px);
+    top: calc(50% - 7px);
     right: 31px;
+    background-color: transparent;
+    border: none;
+    height: 14px;
+    width: 20px;
+    padding: 0;
+    outline: none;
+  }
+
+  .top-nav__icon-hamburger {
+    position:absolute;
+    top: 6px;
     display: block;
     height: 2px;
     width: 20px;
@@ -82,12 +93,36 @@
     display: block;
   }
 
-  .logo-hamburger.no-js {
+  .top-nav__logo-hamburger.no-js {
     display: none;
+  }
+
+  .top-nav__icon-hamburger.active::before {
+    top: 0;
+    width: 28px;
+    transition-duration: 0.3s;
+    visibility: hidden;
+  }
+
+  .top-nav__icon-hamburger.active {
+    width: 28px;
+    transition-duration: 0.3s;
+    transform: rotate(45deg);
+  }
+
+  .top-nav__icon-hamburger.active::after {
+    top: 0;
+    width: 28px;
+    transition-duration: 0.3s;
+    transform: rotate(-90deg);
   }
 }
 
 @media (min-width: $tablet-size) {
+  .top-nav__logo-hamburger {
+    display: none;
+  }
+
   .top-nav__list {
     display: flex;
     flex-direction: row;

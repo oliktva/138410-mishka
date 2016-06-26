@@ -1,17 +1,21 @@
-    //  var title = document.querySelector(".search-hotel .title-block");;
     var nojsList = document.querySelectorAll(".no-js");
+    var openMenu = document.querySelector(".top-nav__logo-hamburger");
+    var navItemList = document.querySelectorAll(".top-nav__item:not(:nth-child(1))");
+    var iconMenu = openMenu.querySelector(".top-nav__icon-hamburger");
 
     for (var i = 0; i < nojsList.length; i++) {
       nojsList[i].classList.remove("no-js");
     }
 
-  /*    title.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.toggle("search-hotel-invisible");
-        inputArrivalDate.focus();
-      });
+   openMenu.addEventListener("click", function(event) {
+      event.preventDefault();
+      for (var i = 0; i < navItemList.length; i++) {
+        navItemList[i].classList.toggle("top-nav__item--hidden");
+      }
+      iconMenu.classList.toggle("active");
+    });
 
-      plusAdults.addEventListener("click", function(event) {
+  /*       plusAdults.addEventListener("click", function(event) {
         event.preventDefault();
         var value = parseInt(inputAdults.value) + 1;
         inputAdults.value = value;
