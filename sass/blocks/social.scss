@@ -1,4 +1,6 @@
 .social {
+  display: flex;
+  
   &::after {
     content: '';
     display: block;
