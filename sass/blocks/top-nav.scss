@@ -23,6 +23,7 @@
 
   &--basket svg {
     display: none;
+    cursor: pointer;
   }
 }
 
@@ -140,16 +141,18 @@
   .top-nav__item {
     &--logo {
       box-sizing: border-box;
-      min-height: 88px;
+      min-height: 86px;
       padding-left: 49px;
       padding-right: 210px;
+      padding-top: 19px;
+      padding-bottom: 19px;
       border-top: none;
     }
 
     &--search {
       position: relative;
       width: 82px;
-      height: 88px;
+      height: 86px;
       padding: 0;
       border: 1px $color-gray-3 solid;
       border-top: none;
@@ -204,12 +207,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-height: 88px;
+    min-height: 86px;
 
     &--search {
       font-size: 0;
       width: 82px;
-      height: 88px;
+      height: 86px;
     }
 
     &--catalog {
@@ -221,7 +224,7 @@
 
     &--knitting {
       min-height: 37px;
-      padding: 0 34px;
+      padding: 18px 34px;
       @include set-font-style(14px, normal);
     }
 
@@ -240,12 +243,21 @@
 
 @media (min-width: $desktop-size) {
   .top-nav__item {
+    display: flex;
+    flex-wrap: wrap;
+
     &--logo {
+      box-sizing: border-box;
       order: 1;
       width: 266px;
-      height: 88px;
-      padding: 7px 17px;
+      height: 87px;
+      padding: 0 17px;
       text-align: left;
+
+      & a {
+        display: flex;
+        align-items: center;
+      }
     }
 
     &--logo:hover img{
@@ -305,7 +317,7 @@
 
   .top-nav__link {
     box-sizing: border-box;
-    min-height: 88px;
+    min-height: 86px;
 
     &:hover {
       opacity: 0.6;
