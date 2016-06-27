@@ -55,6 +55,8 @@
   height: 457px;
   width: $mobile-size;
   margin: 0 -30px;
+  background-image: url("../img/map-mobile@1x");
+  background-repeat: no-repeat;
 }
 
 .contacts__map-wrapper {
@@ -119,6 +121,8 @@
   .contacts__map {
     width: $tablet-size;
     margin: 27px -45px;
+    background-image: url("../img/map-tablet@1x");
+    background-repeat: no-repeat;
   }
 
   .contacts .btn {
@@ -163,6 +167,8 @@
     right: 97px;
     top: 133px;
     width: 525px;
+    background-image: url("../img/map-desktop@1x");
+    background-repeat: no-repeat;
   }
 
   .contacts .btn {
