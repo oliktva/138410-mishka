@@ -8,7 +8,9 @@
 }
 
 .about-shop__descr {
-  @include set-font-style(16px, auto);
+  display: block;
+  padding-bottom: 30px;
+  @include set-font-style(16px, normal);
 }
 
 .about-shop__list {
@@ -24,12 +26,6 @@
   justify-content: space-around;
   min-height: 125px;
 }
-
-.about-shop__descr {
-  display: block;
-  padding-bottom: 30px;
-}
-
 
 .about-shop__img svg,
 .about-shop__img path {
@@ -103,7 +99,7 @@
 
   .about-shop__descr {
     padding-bottom: 40px;
-    @include set-font-style(20px, auto);
+    @include set-font-style(20px, normal);
   }
 
   .about-shop__img {
