@@ -12,6 +12,7 @@
   .content-header {
     position: relative;
     margin-top: -53px;
+    overflow: hidden;
 
       &::after {
         content: '';
@@ -36,11 +37,11 @@
 @media (min-width: $desktop-size) {
   .content-header {
     min-height: 163px;
-    margin-top: -57px;
+    margin-top: -58px;
 
     &::after {
       bottom: 0;
-      left: 0;
+      left: -17px;
       width: calc(100% + 200px);
     }
   }

@@ -1,9 +1,16 @@
   @font-face {
-   font-family: OpenSans; /* Имя шрифта */
-   src: url(../fonts/opensans.woff); /* Путь к файлу со шрифтом */
+   font-family: "OpenSans"; /* Имя шрифта */
+   src: url(../fonts/opensans.woff),
+        url(../fonts/opensans.woff2); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+    font-style: normal;
+
   }
 
   @font-face {
-     font-family: OpenSans Bold; /* Имя шрифта */
-     src: url(../fonts/opensansbold.woff); /* Путь к файлу со шрифтом */
+     font-family: "OpenSans Bold"; /* Имя шрифта */
+     src: url(../fonts/opensansbold.woff),
+     url(../fonts/opensansbold.woff2); /* Путь к файлу со шрифтом */
+     font-weight: bold;
+     font-style: normal;
   }
