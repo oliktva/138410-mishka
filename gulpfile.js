@@ -14,8 +14,8 @@ var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var run = require("run-sequence");
 var del = require("del");
-var cheerio = require('gulp-cheerio');
-var	replace = require('gulp-replace');
+var cheerio = require("gulp-cheerio");
+var	replace = require("gulp-replace");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -53,13 +53,13 @@ gulp.task("symbols", function() {
   return gulp.src("build/img/icons/*.svg")
   .pipe(cheerio({
 			run: function ($) {
-				$('[fill]').removeAttr('fill');
-				$('[stroke]').removeAttr('stroke');
-				$('[style]').removeAttr('style');
+				$("[fill]").removeAttr("fill");
+				$("[stroke]").removeAttr("stroke");
+				$("[style]").removeAttr("style");
 			},
 			parserOptions: {xmlMode: true}
 		}))
-    .pipe(replace('&gt;', '>'))
+    .pipe(replace("&gt;", ">"))
     .pipe(svgmin())
     .pipe(svgstore({
        inlineSvg: true

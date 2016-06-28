@@ -76,7 +76,7 @@
 }
 
 .form-list__input[type="radio"] + span::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -90,7 +90,7 @@
 }
 
 .form-list__input[type="radio"]:checked + span::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   top: 13px;
@@ -103,7 +103,7 @@
 }
 
 .form-list__input[type="checkbox"] + span::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -116,7 +116,7 @@
 }
 
 .form-list__input[type="checkbox"]:checked + span::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 11px;
   left: 9px;

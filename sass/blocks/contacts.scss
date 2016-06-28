@@ -68,7 +68,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: 165px;
@@ -90,7 +90,7 @@
     padding-bottom: 18px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 68px;
       left: -10px;
@@ -109,7 +109,7 @@
     @include set-font-style($header-section-tablet, normal);
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: -10px;
       right: 10px;
