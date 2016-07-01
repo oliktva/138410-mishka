@@ -128,7 +128,8 @@
 
 @media (min-width: $desktop-size) {
   .knitting-order__title {
-    width: 108px;
+    display: block;
+    width: 110px;
     padding-left: 60px;
     padding-right: 5px;
   }
@@ -143,6 +144,6 @@
   }
 
   .knitting-order__footer {
-    margin: 40px 220px;
+    margin: 40px 225px;
   }
 }
